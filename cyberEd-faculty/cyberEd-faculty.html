@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <title>CyberEd.io Faculty</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div>
+        <div class="expert-banner-img">
+            <!-- <img class="img-fluid expert-banner-img w-100" src="../images/mask-background.png" alt=""> -->
+            <div class="expert-banner">
+                <div class="head-text pb-4 text-white font-weight-bold">CyberEd.io Faculty</div>
+                <div class="body-text pb-5 text-white">
+                    Contribute your leadership experience as a guest lecturer or curriculum steering committee for ISMGs
+                    premier education platform – CyberEd.io.
+                </div>
+            </div>
+        </div>
+
+        <div class="expert-body">
+            <div class="font-weight-bold py-5">
+                <a class="text-black text-decoration-none" href="./../index.html"><i
+                        class="fa fa-chevron-left fa-lg mr-3" aria-hidden="true"></i><span>Back</span></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
+
+<style>
+    .hover-effect .content-overlay {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #000000 100%);
+        position: absolute;
+        height: 100%;
+        width: auto;
+        left: 15px;
+        top: 0;
+        bottom: 0;
+        right: 15px;
+        opacity: 1;
+        border-radius: 0px 0px 20px 20px;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s;
+    }
+
+    .padding-section {
+        padding-top: 30px;
+    }
+
+    .play-btn {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .play-btn .fa {
+        color: #fff;
+    }
+
+
+    .one-line-text,
+    .two-line-text {
+        position: absolute;
+        color: #fff;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 22px;
+        z-index: 99;
+    }
+
+    .one-line-text {
+        bottom: 30px;
+    }
+
+    .two-line-text {
+        bottom: 17px;
+        width: 75%;
+    }
+
+    .hover-effect:hover .play-btn {
+        opacity: 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity .4s ease;
+        z-index: 9;
+    }
+
+    .hover-effect:hover .img-height {
+        -webkit-filter: blur(1px);
+        filter: blur(1px);
+        transition: .4s ease-in-out;
+    }
+
+    .hover-effect:hover .content-overlay {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+        backdrop-filter: blur(2px);
+        transition: .4s ease-in-out;
+        z-index: 9;
+
+    }
+
+    .hover-effect:hover .one-line-text {
+        transform: translate(-50%, -250%);
+        transition: .4s ease-in-out;
+    }
+
+    .hover-effect:hover .two-line-text {
+        transform: translate(-50%, -100%);
+        transition: .4s ease-in-out;
+    }
+</style>

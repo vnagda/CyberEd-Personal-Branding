@@ -42,13 +42,13 @@ body {
 /* expert insights css  start*/
 
 .expert-banner-img {
-    height: 400px !important;
+    height: 90vh !important;
     background: rgba(25, 71, 135, 0.4);
 }
 
 .expert-banner {
     position: absolute;
-    bottom: 36%;
+    bottom: 15%;
     padding-left: 125px;
     color: #111215 !important;
 }

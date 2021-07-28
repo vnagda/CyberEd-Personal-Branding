@@ -1,23 +1,31 @@
 /* common css for all pages - start */
+html,
+body {
+    font-size: 16px;
+}
 
 body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
 .banner-img {
-    height: 90vh !important;
-    width: 100% !important;
+    height: 90vh;
+    height: calc(var(--vh, 1vh) * 90);
+    width: 100%;
+    object-fit: cover;
 }
 
 .banner-text {
     position: absolute;
     bottom: 25%;
     left: 6%;
-    color: #fff !important;
+    color: #fff;
 }
 
-.head-text {
-    font-size: 60px;
+.head-text,
+.brand-head-text {
+    /* font-size: 60px; */
+    font-size: 4em;
     line-height: 64px;
     /* padding-bottom: 22px; */
     width: 50%;
@@ -25,16 +33,18 @@ body {
 
 .body-text {
     font-size: 20px;
+    font-size: 1.25em;
     line-height: 24px;
     width: 50%;
 }
 
-.padding-row {
-    padding-top: 64px;
+.category-section {
+    padding: 116px 0px 0px;
+    background: #E5E5E5;
 }
 
-.text-black {
-    color: #000 !important;
+.padding-row {
+    padding-bottom: 64px;
 }
 
 /* common css for all pages - end */
@@ -42,20 +52,26 @@ body {
 /* expert insights css  start*/
 
 .expert-banner-img {
-    height: 90vh !important;
+    height: 90vh;
+    height: calc(var(--vh, 1vh) * 90);
     background: rgba(25, 71, 135, 0.4);
 }
 
 .expert-banner {
     position: absolute;
     bottom: 15%;
-    padding-left: 125px;
-    color: #111215 !important;
+    left: 9%;
+    /* padding-left: 125px; */
+    color: #111215;
 }
 
-.expert-body {
+/* .expert-body {
     padding: 0px 125px 120px 125px;
-}
+} */
+
+/* .content-body {
+    padding: 0px 125px 120px 125px;
+} */
 
 /* expert insights css  end*/
 
@@ -69,17 +85,15 @@ body {
 }
 
 /* image hover css start */
+.hover-effect .content-overlay:after {
 
-.hover-effect .content-overlay {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 70%, rgba(0, 0, 0, 1) 100%);
+    content: "";
     position: absolute;
-    height: 100%;
     width: auto;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 70%, rgba(0, 0, 0, 1) 100%);
     left: 15px;
-    top: 0;
-    bottom: 0;
     right: 15px;
-    opacity: 1;
     border-radius: 20px;
     -webkit-transition: all 0.4s ease-in-out 0s;
     -moz-transition: all 0.4s ease-in-out 0s;
@@ -87,7 +101,7 @@ body {
 }
 
 .padding-section {
-    padding-top: 30px;
+    margin-bottom: 30px;
 }
 
 .play-btn {
@@ -100,7 +114,7 @@ body {
 }
 
 .w-85 {
-    width: 85% !important;
+    width: 85%;
 }
 
 .one-line-text,
@@ -140,13 +154,15 @@ body {
     transition: .4s ease-in-out;
 }
 
-.hover-effect:hover .content-overlay {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+.hover-effect:hover .content-overlay:after {
+    content: "";
+    position: absolute;
+    width: auto;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
     backdrop-filter: blur(2px);
     border-radius: 20px;
     transition: .4s ease-in-out;
-    z-index: 9;
-
 }
 
 .hover-effect:hover .one-line-text {
@@ -160,3 +176,53 @@ body {
 }
 
 /* image hover css end */
+
+/* responsive media query */
+@media (max-width: 1100px) {
+    /* .brand-head-text {
+        width: 75%;
+    } */
+
+    .body-text {
+        width: 75%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    html,
+    body {
+        font-size: 14px;
+    }
+
+    .head-text {
+        width: 100%;
+    }
+
+
+    .brand-head-text {
+        width: 75%;
+        line-height: 50px;
+    }
+
+    .body-text {
+        width: 75%;
+    }
+}
+
+@media (max-width: 575px) {
+
+    html,
+    body {
+        font-size: 12px;
+    }
+
+    .body-text {
+        width: 90%;
+    }
+    
+    .padding-row{
+        display: flex;
+        justify-content: center;
+    }
+}

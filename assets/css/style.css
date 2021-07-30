@@ -197,8 +197,12 @@ body {
 
     .head-text {
         width: 100%;
+        line-height: 50px;
     }
 
+    .category-section {
+        padding: 75px 0px 0px;
+    }
 
     .brand-head-text {
         width: 75%;
@@ -217,11 +221,19 @@ body {
         font-size: 12px;
     }
 
+    .banner-text {
+        bottom: 20%;
+    }
+
+    .category-section {
+        padding: 75px 0px 0px;
+    }
+
     .body-text {
         width: 90%;
     }
-    
-    .padding-row{
+
+    .padding-row {
         display: flex;
         justify-content: center;
     }

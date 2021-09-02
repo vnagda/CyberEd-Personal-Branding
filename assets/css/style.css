@@ -22,25 +22,86 @@ body {
     color: #fff;
 }
 
-.head-text,
-.brand-head-text {
-    /* font-size: 60px; */
-    font-size: 4em;
-    line-height: 64px;
-    /* padding-bottom: 22px; */
-    width: 50%;
-}
-
 .body-text {
-    font-size: 20px;
     font-size: 1.25em;
     line-height: 24px;
     width: 50%;
 }
 
+.brand-head-text,
+.head-text {
+    font-size: 4em;
+    line-height: 64px;
+    width: 50%;
+}
+
 .category-section {
     padding: 116px 0px 0px;
-    background: #E5E5E5;
+    /* background: #E5E5E5; */
+}
+
+.overlay-one,
+.overlay-two {
+    position: relative;
+}
+
+.overlay-one:after {
+    content: " ";
+    position: absolute;
+    width: 80%;
+    border-radius: 20px;
+    left: 10%;
+    bottom: 0;
+    height: 100%;
+    -moz-box-shadow: 0px 16px 0px #CCCCCC;
+    -webkit-box-shadow: 0px 16px 0px #cccccc;
+    box-shadow: 0px 16px 0px #cccccc;
+    z-index: 9;
+
+}
+
+.overlay-two:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    border-radius: 20px;
+    z-index: 100;
+}
+
+.overlay-two:after {
+    z-index: 10;
+    content: " ";
+    position: absolute;
+    width: 90%;
+    border-radius: 20px;
+    left: 5%;
+    bottom: 0;
+    height: 100%;
+    -moz-box-shadow: 0px 8px 0px #a6a6a6;
+    -webkit-box-shadow: 0px 8px 0px #a6a6a6;
+    box-shadow: 0px 8px 0px #a6a6a6;
+}
+
+
+.img-text {
+    position: absolute;
+    z-index: 101;
+    font-size: 1.375em;
+    line-height: 30px;
+    color: #FFFFFF;
+    font-weight: bold;
+    width: 65%;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.img-zindex {
+    position: relative;
+    z-index: 99;
 }
 
 .padding-row {
@@ -124,7 +185,7 @@ body {
     left: 50%;
     transform: translate(-50%, 0%);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 22px;
     z-index: 99;
 }
@@ -159,8 +220,7 @@ body {
     position: absolute;
     width: auto;
     height: 100%;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
-    backdrop-filter: blur(2px);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
     border-radius: 20px;
     transition: .4s ease-in-out;
 }
